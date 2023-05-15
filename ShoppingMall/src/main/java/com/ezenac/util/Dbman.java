@@ -17,6 +17,7 @@ public class Dbman {
 		Connection con = null;
 		try {
 			Class.forName(driver);
+			
 			con = DriverManager.getConnection(url, "solbee", "1234");
 		} catch (ClassNotFoundException e) {	e.printStackTrace();
 		} catch (SQLException e) {	e.printStackTrace();	}
